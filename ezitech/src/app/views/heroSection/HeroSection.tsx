@@ -4,8 +4,8 @@ import Image from "next/image";
 import heroImage from "../../assets/images/hero/hero-img.png";
 function HeroSection() {
   return (
-    <div className="flex sm:flex-col md:flex-row justify-between px-10  bg-[#25262A] w-full object-cover">
-      <div className="sm:w-full md:w-1/3 space-y-5">
+    <div className="flex flex-col sm:flex-col lg:flex-row justify-between px-10  bg-[#25262A]  object-cover">
+      <div className="sm:w-full lg:w-1/3 space-y-5">
         <p className="text-[#64F4AB] ">Introducing</p>
         <h1 className="text-6xl font-bold ">Hello </h1>
         <h1 className="text-6xl font-bold  ">I am Jessy</h1>
@@ -18,7 +18,7 @@ function HeroSection() {
         <PrimaryButton text="Contact Me" link="/" />
       </div>
       <div className="mr-32">
-        <span className=" grid grid-cols-2  gap-[450px] absolute mt-24 -ml-10">
+        <span className=" hidden md:grid grid grid-cols-2  gap-[450px] absolute mt-24 -ml-10">
           <span className="text-[#64F4AB] bg-[#2D2E32] rounded-full px-6 py-6 text-3xl font-semibold">
             Id
           </span>

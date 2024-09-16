@@ -5,9 +5,9 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 
 function Feedback() {
   return (
-    <div className="flex gap-20 p-16 items-center">
+    <div className="flex flex-wrap md:flex-nowrap gap-20 p-16 items-center">
       <Image className=" rounded-3xl" src={feedbackImage} alt="Feedback Image"></Image>
-      <div className="w-2/3 space-y-5">
+      <div className="md:w-2/3 space-y-5">
         <RiDoubleQuotesL className="text-6xl text-[#64F4AB]" />
         <p className="font-semibold">
           A Quizk Brown Fox Jumps Over The Lazy Dog. Lorem ipsum dolor sit amet

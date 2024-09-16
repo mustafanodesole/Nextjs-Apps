@@ -6,7 +6,7 @@ import { BiMessageDetail } from 'react-icons/bi'
 import Image from 'next/image'
 function Footer() {
   return (
-    <div className='bg-[#25262A] flex flex-wrap justify-between items-center px-6 py-12'>
+    <div className='bg-[#25262A] flex flex-wrap gap-5 justify-between items-center px-6 py-12'>
       <Image src={logo} alt='Logo Here' />
       <p>© 2023 Freelancer - Phlox Elementor WordPress Theme. All rights reserved.</p>
       <span className='flex gap-8'>

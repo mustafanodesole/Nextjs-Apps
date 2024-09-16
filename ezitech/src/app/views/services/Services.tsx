@@ -7,9 +7,9 @@ import PrimaryButton from '@/app/components/primaryButton'
 
 function Services() {
     return (
-        <div className='p-10 flex sm:flex-col md:flex-row  lg:flex-row justify-between gap-20 items-center'>
+        <div className='p-10 flex flex-col md:flex-row  lg:flex-row justify-between gap-20 items-center'>
 
-            <div className=' grid grid-cols-2 gap-5'>
+            <div className=' grid grid-cols-1 md:grid-cols-2 gap-5'>
                 <div className='group rounded-3xl p-10 bg-[#25262A]  text-center space-y-3 hover:bg-[#64F4AB] hover:shadow-md hover:shadow-[#64F4AB] duration-300'>
                     <TbBrandProducthunt className='text-[#64F4AB] group-hover:text-white text-6xl m-auto' />
                     <h1 className='text-3xl font-semibold'>Product Design</h1>

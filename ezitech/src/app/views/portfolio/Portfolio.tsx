@@ -9,7 +9,7 @@ function Portfolio() {
     <>
       <div>
         {/* 1 */}
-        <div className="flex gap-28 p-10 justify-between items-center">
+        <div className="flex flex-col md:flex-row gap-28 p-10 justify-between items-center">
           <div className="w-2/3">
             <PorfolioDetails
               projectNumber="project 1"
@@ -18,7 +18,7 @@ function Portfolio() {
           </div>
           <div className="rounded-3xl">
             <Image
-              className="rounded-3xl hover:shadow-xl hover:shadow-[#444444] hover:rotate-6 duration-500"
+              className="rounded-3xl  hover:shadow-xl hover:shadow-[#444444] hover:rotate-6 duration-500"
               src={image1}
               alt="Image 1"
             />
@@ -26,7 +26,7 @@ function Portfolio() {
         </div>
 
         {/* 2 */}
-        <div className="flex gap-28 p-10 items-center">
+        <div className="flex flex-wrap-reverse md:flex-nowrap gap-28 p-10  justify-between items-center">
           <Image
             className="rounded-3xl hover:shadow-xl hover:shadow-[#444444] hover:rotate-6 duration-500"
             src={image2}
@@ -41,7 +41,7 @@ function Portfolio() {
         </div>
 
         {/* 3 */}
-        <div className="flex gap-28 items-center p-10">
+        <div className="flex flex-col md:flex-row gap-28 items-center p-10">
           <div className="w-2/3">
             <PorfolioDetails
               projectNumber="project 3"
