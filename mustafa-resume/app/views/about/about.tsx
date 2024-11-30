@@ -1,13 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import js from '@/app/assets/images/js.png'
+import html from '@/app/assets/images/html.png'
+import html2 from '@/app/assets/images/html2.png'
 
 const About = () => {
   return (
     <>
      
       <section id="about" className="text-white">
-        <div className=" py-10 flex flex-wrap lg:flex-nowrap justify-between">
+        <div className=" py-10 flex flex-wrap lg:flex-nowrap justify-center gap-3">
           <div className="md:basis-1/2 flex flex-col gap-2">
             <div className="border border-gray-500 p-10 rounded-lg bg-black/10">
               <h1 className="text-start text-3xl font-bold ">About Me</h1>
@@ -20,12 +24,12 @@ const About = () => {
               <Link href='#contact' className="bg-white p-2 text-black font-semibold rounded-lg">Let`s Discuss</Link>
             </div>
           </div>
-          <div className="md:basis-1/3 p-4 space-y-2  border border-gray-500 rounded-lg bg-black/10 flex flex-col justify-center items-start">
+          <div className="md:basis-1/2 p-4 space-y-2  border border-gray-500 rounded-lg bg-black/10 flex flex-col justify-center items-start">
             <p className="text-md text-gray-500">I constantly improve </p>
             <h1 className="text-4xl font-bold text-white">My Tech Stack</h1>
-            <div className="gap-2 flex flex-wrap">
+            <div className="gap-3 flex flex-wrap">
 
-              <span className="bg-[#000000] shadow-2xl p-2 text-sm rounded-lg border border-gray-800">Javascript </span>
+              <span className="bg-[#000000] shadow-2xl p-2 text-sm rounded-lg border border-gray-800 flex  justify-center items-center gap-1 "> Javascript  </span>
               <span className="bg-[#000000] shadow-2xl p-2 text-sm rounded-lg border border-gray-800">Typescript</span>
               <span className="bg-[#000000] shadow-2xl p-2 text-sm rounded-lg border border-gray-800">HTML</span>
               <span className="bg-[#000000] shadow-2xl p-2 text-sm rounded-lg border border-gray-800">Nextjs</span>
@@ -40,8 +44,12 @@ const About = () => {
               <span className="bg-[#000000] shadow-2xl p-2 text-sm rounded-lg border border-gray-800">MySQL</span>
               <span className="bg-[#000000] shadow-2xl p-2 text-sm rounded-lg border border-gray-800">PosgreSQL</span>
               <span className="bg-[#000000] shadow-2xl p-2 text-sm rounded-lg border border-gray-800">WordPress</span>
+              {/* <Image src={js} alt="Javascript" width={30} height={20} className="rounded-md"/>
+              <Image src={html} alt="Javascript" width={30} className="rounded-md"/>
+              <Image src={html2} alt="Javascript" width={40} className="rounded-md"/> */}
 
             </div>
+            
            
           </div>
         </div>
